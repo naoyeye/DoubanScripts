@@ -2,7 +2,7 @@
 * @Author: hanjiyun
 * @Date:   2013-12-29 02:07:28
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2013-12-29 04:21:21
+* @Last Modified time: 2013-12-29 20:29:13
 */
 
 // ==UserScript==
@@ -27,8 +27,11 @@ $(function(){
     首页右侧广告处理
 ==================*/
 
-// 屏蔽右侧广告、试试更多有趣的内容、正在发生、豆瓣系列应用
-    $('#dale_homepage_login_bottom_right, #dale_homepage_login_top_right, .notify-mod, #events, .mobile-app-entrance, #dale_homepage_login_bottom_middle_right, #dale_homepage_online_activity_promo').hide();
+// 屏蔽右侧广告、试试更多有趣的内容、正在发生、豆瓣系列应用; 覆盖滚动时的position:fixed。
+
+    $('head').append('<style type="text/css">.fixed-fields{position:static!important;}#dale_homepage_login_bottom_right, #dale_homepage_login_top_right, .notify-mod, #events, .mobile-app-entrance, #dale_homepage_login_bottom_middle_right, #dale_homepage_online_activity_promo{display:none!important;}</style>')
+
+    
 
 })
 
