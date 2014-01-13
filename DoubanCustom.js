@@ -2,14 +2,14 @@
 * @Author: hanjiyun
 * @Date:   2013-12-29 02:07:28
 * @Last Modified by:   hanjiyun
-* @Last Modified time: 2013-12-29 20:29:13
+* @Last Modified time: 2014-01-13 18:45:12
 */
 
 // ==UserScript==
 // @name        DoubanCustom
 // @namespace   jiyun@han.im
 // @include     http://*.douban.com/*
-// @version     1
+// @version     1.1
 // @grant       GM_setValue
 // @grant       GM_getValue
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
@@ -29,7 +29,7 @@ $(function(){
 
 // 屏蔽右侧广告、试试更多有趣的内容、正在发生、豆瓣系列应用; 覆盖滚动时的position:fixed。
 
-    $('head').append('<style type="text/css">.fixed-fields{position:static!important;}#dale_homepage_login_bottom_right, #dale_homepage_login_top_right, .notify-mod, #events, .mobile-app-entrance, #dale_homepage_login_bottom_middle_right, #dale_homepage_online_activity_promo{display:none!important;}</style>')
+    $('head').append('<style type="text/css">.fixed-fields{position:static!important;}#dale_homepage_login_bottom_right, #dale_homepage_login_top_right, .notify-mod, #events, .mobile-app-entrance, #dale_homepage_login_bottom_middle_right, #dale_homepage_online_activity_promo, .channel_promo{display:none!important;}</style>')
 
     
 
